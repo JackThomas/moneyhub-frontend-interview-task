@@ -29,6 +29,14 @@ export const theme = {
     white: {
       default: "#fff",
     },
+    positive: {
+      default: "#c2f7e1",
+      text: "#006b57",
+    },
+    negative: {
+      default: "#000000",
+      text: "#00ffff",
+    }
   },
   typography: {
     xs: {

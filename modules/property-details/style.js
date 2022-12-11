@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const AccountList = styled.ul`
   list-style: none;
   padding-left: 0;
+  width: 100%;
 `;
 
 export const AccountLabel = styled.div`
@@ -41,8 +42,14 @@ export const AccountListItem = styled.div`
   &:not(:last-of-type) {
     margin-bottom: ${(props) => props.theme.space.m};
   }
+
+  ${(props) =>
+    props.justify &&
+    css`
+      justify-content: ${props.justify};
+    `}
 `;
 
 export const Inset = styled.div`
-  padding: 0 ${(props) => props.theme.space.m};
+padding: 0 ${(props) => props.theme.space.m};
 `;
